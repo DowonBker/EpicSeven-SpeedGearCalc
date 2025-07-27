@@ -1,7 +1,7 @@
 /*
 	에픽세븐 속도템 강화 확률 계산 프로그램
 	https://page.onstove.com/epicseven/kr/view/7902451 기준
-*/
+
 #include <stdio.h>
 #include <math.h>
 #define MAX_SPD 35  //속도 최댓값이 34, spd_perc[34]가 속도 34를 가르키기위해 1을 더한 값을 선언
@@ -111,15 +111,10 @@ void enhance_lgd(double perc[MAX_SPD]){
     copy_array(perc4, perc);
     copy_array(perc5, perc);
 
-
-    int enh_times=2;
-    enh_lgd(enh_times, perc2);
-    enh_times++;
-    enh_lgd(enh_times, perc3);
-    enh_times++;
-    enh_lgd(enh_times, perc4);
-    enh_times++;
-    enh_lgd(enh_times, perc5);
+    enh_lgd(2, perc2);
+    enh_lgd(3, perc3);
+    enh_lgd(4, perc4);
+    enh_lgd(5, perc5);
 
     double sum[MAX_SPD];
     for(int i=0;i<MAX_SPD;i++)
@@ -190,3 +185,4 @@ int binomi_coeffi(int n, int k){
 double binomi_probabil(int n, int k, double p){
     return binomi_coeffi(n,k)*pow(p,k)*pow(1-p,n-k);
 }
+*/
