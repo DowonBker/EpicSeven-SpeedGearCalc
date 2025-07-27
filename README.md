@@ -1,6 +1,6 @@
 # EpicSeven-SpeedGearCalc
 
-> 게임 **에픽세븐**의 속도 템 강화시 최종 속도 확률을 계산하는 프로그램입니다.
+> 게임 **에픽세븐**의 속도 템 강화시 최종 속도 확률을 계산하는 프로그램입니다.<br>
 > 공식 강화 확률: [에픽세븐 공지 링크](https://page.onstove.com/epicseven/kr/view/7902451)
 
 
